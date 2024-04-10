@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+   margin: 0;
+   font-family: sans-serif;
+   background: linear-gradient(to bottom,  #141725, #151F39);
+ }
+ 
+ .container {
+   position: relative;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ /* Background Gradient */
+ .background {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   
+ }
+ 
+ /* Image Container */
+ .image-container {
+   position: relative;
+   max-width: 80%;
+   height: auto;
+   margin-bottom: 50px;
+ }
+ 
+ .image-container img {
+   display: block;
+   max-width: 250px;
+   height: auto;
+   border-radius: 10px;
+ }
+ 
+ 
+ /* Button */
+ .button {
+
+   margin-top: 50px;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   /* Gradient background */
+   background: linear-gradient(to right, #4CAF50, #008CBA); /* Example gradient */
+   color: white;
+   cursor: pointer;
+ }
+
+ .container-text{
+   display: flex;
+   flex-direction: column;
+   width: 500px;
+   /* border: 1px solid red; */
+   text-align: center;
+   color: white;
+ }
+ 
+ @media (max-width: 768px) {
+   .image-container img{
+      width: 200px;
+   }
+   .container-text{
+      width: 300px;
+   }
+ }
+ 
